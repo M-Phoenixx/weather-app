@@ -1,0 +1,97 @@
+.body {
+  background: #113cfc;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weathercard {
+  width: clamp(250px, 70%, 800px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.search > input {
+  outline-width: 0;
+  border: none;
+  color: black;
+  padding: 3px;
+}
+.search > .MuiSvgIcon-root {
+  color: aliceblue;
+  cursor: pointer;
+  margin-left: 2px;
+}
+.place {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: calc(10px + 1vw);
+  margin: 1vh;
+}
+.iconone > .MuiSvgIcon-root {
+  font-size: calc(25px + 1vw);
+}
+.icon {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1vh;
+}
+.icon > .iconimg {
+  width: calc(90px + 5vw);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.weatherinfo {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh;
+  padding: 1vh;
+  color: white;
+}
+.otherinfo {
+  display: flex;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.windinfo,
+.huminfo {
+  margin: 10px;
+  font-size: calc(10px + 1vw);
+}
+.temp {
+  font-size: calc(40px + 2vw);
+}
